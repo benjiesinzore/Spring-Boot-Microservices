@@ -7,7 +7,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootMicroservicesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootMicroservicesApplication.class, args);
+
+
+		try {
+
+			SpringApplication.run(SpringBootMicroservicesApplication.class, args);
+		} catch (Exception ee){
+			ee.printStackTrace();
+		}
 	}
 
 }
